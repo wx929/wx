@@ -281,6 +281,7 @@ a:hover{
                     width: 180px;
                     height: 400px;
                     background: #036dde;
+                    position: relative;
                     li{
                         width: 180px;
                         height: 40px;
@@ -290,7 +291,21 @@ a:hover{
                         color: #fff;
                         border-left: 1px solid #036dde;
                         overflow: hidden;
-                        div{
+                        .list_pop{
+                            position: absolute;
+                            left: 179px;
+                            top: 0;
+                            width: 1022px;
+                            min-height: 400px;
+                            padding: 20px 35px 20px 0;
+                            background: #fff;
+                            border-bottom: 1px solid #036DDE;
+                            border-right: 1px solid #036DDE;
+                            border-left: 1px solid #036DDE;
+                            box-sizing: border-box;
+                            z-index: -1;
+                        }
+                        .list_t{
                             width: 100%;
                             height: 39px;
                             border-bottom: 1px dashed #0a5fbb;
@@ -394,6 +409,7 @@ a:hover{
                         border-top-style: initial;
                         border-top-color: initial;
                         display: none;
+                        z-index: 50;
                         p{
                             font-size: 16px;
                             line-height: 170%;
@@ -442,21 +458,18 @@ a:hover{
 
          .wrap-foot{
              background: #0066d4;
-             ul{
+             .wrap-f{
                 padding: 30px 0px;
                 border-bottom: 1px solid #147ce8;
                 li{
                     float: left;
-                    display: inline;
                     padding-right: 58px;
                     img{
                         float: left;
-                        display: inline;
                         margin-right: 8px;
                          }
-                    .wrap-b{
+                    .wrap-t{
                         float: left;
-                        display: inline;
                         color: #ffffff;
                         p{
                             font-size: 20px;
@@ -470,5 +483,138 @@ a:hover{
                     }
                 }
              }
+             .wrap-b{
+                padding: 36px 0 40px 20px;
+                width: 1180px;
+                height: 162px;
+                .wrap-b-l{
+                    float: left;
+                    width: 248px;
+                    color: #fff;
+                    border-right: 1px solid #0c74df;
+                    padding-right: 50px;
+                    .wrap-img1{
+                        width: 106px;
+                        img{
+                            width: 106px;
+                            height: 106px;
+                        }
+                        .title1{
+                            padding-bottom: 8px;
+                            text-align: center;
+                            font-family: "Microsoft YaHei";
+                            font-size: 14px;
+                        }
+                        .active1{
+                            padding-top: 8px;
+                            text-align: center;
+                            font-family: "Microsoft YaHei";
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .wrap-b-r {
+                            float: left;
+                                .left-wrap{
+                                    padding-left: 50px;
+                                    dl{
+                                        float: left;
+                                        width: 114px;
+                                        text-align: left;
+                                        color: #fff;
+                                        line-height: 22px;
+                                        dt{
+                                            padding-bottom: 12px;
+                                            font: bold 16px/24px "";
+                                        }
+                                        dd a{
+                                            color: #fff;
+                                        }
+                                        
+                                    }
+
+                                     }
+                                     .right-wrap{
+                                        padding-top: 4px;
+                                        padding-left: 60px;
+                                        width: 192px;
+                                        border-left: 1px solid #0b72de;
+                                     }
+
+                             }
+             }
+         }
+         .foot{
+            padding-top: 10px;
+            width: 100%;
+            overflow: hidden;
+            line-height: 22px;
+            .title{
+                font-weight: bold;
+                color: #666;
+            }
+            a{
+                padding-right: 12px;
+                color: #666;
+            }
+            .friendLinks{
+                height: 22px;
+                overflow: hidden;
+                .foot-list{
+                width: 1092px;
+                text-align: left;
+                     }
+                }
+              .aboutKadList{
+                margin-top: 6px;
+                padding-top: 6px;
+                border-top: 1px solid #cdcdcd;
+                text-align: center;
+                position: relative;
+                a{
+                    padding-right: 3px;
+                span{
+                    background: url(../img/ia_10151.png) no-repeat;
+                    width: 23px;
+                    height: 10px;
+                    display: inline-block;
+                    position: absolute;
+                    top: 2px;
+                    left: 304px;
+                }
+            }
+              }  
+              .diploma_list{
+                padding: 0 0 20px 16px;
+                text-align: center;
+                padding-bottom: 0px;
+                a{
+                   text-align: center;
+                   padding-right: 8px;
+                }
+              }
+              ul{
+                text-align: center;
+                li{
+                    padding-left: 8px;
+                    display: inline-block;
+                    a{
+                        padding-right: 0;
+                        float: left;
+                        color: #333;
+                        line-height: 18px;
+                    }
+                    .tex{
+                        padding-right: 4px;
+                        width: 82px;
+                       border-right: 2px solid #e0e0e0;
+                    }
+                }
+              }
+              .foot-end{
+                padding: 5px 0;
+                text-align: center;
+                color: #666;
+              }
          }
 }

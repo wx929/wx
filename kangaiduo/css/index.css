@@ -323,6 +323,7 @@ a:hover {
   width: 180px;
   height: 400px;
   background: #036dde;
+  position: relative;
 }
 
 .box .nav .nav-l .nav-l-b li {
@@ -336,24 +337,39 @@ a:hover {
   overflow: hidden;
 }
 
-.box .nav .nav-l .nav-l-b li div {
+.box .nav .nav-l .nav-l-b li .list_pop {
+  position: absolute;
+  left: 179px;
+  top: 0;
+  width: 1022px;
+  min-height: 400px;
+  padding: 20px 35px 20px 0;
+  background: #fff;
+  border-bottom: 1px solid #036DDE;
+  border-right: 1px solid #036DDE;
+  border-left: 1px solid #036DDE;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+.box .nav .nav-l .nav-l-b li .list_t {
   width: 100%;
   height: 39px;
   border-bottom: 1px dashed #0a5fbb;
 }
 
-.box .nav .nav-l .nav-l-b li div a {
+.box .nav .nav-l .nav-l-b li .list_t a {
   color: #c2d8fe;
   font-size: 14px;
 }
 
-.box .nav .nav-l .nav-l-b li div .nav-list-1 {
+.box .nav .nav-l .nav-l-b li .list_t .nav-list-1 {
   margin-right: 6px;
   font-weight: 800;
   color: #FFFFFF;
 }
 
-.box .nav .nav-l .nav-l-b li div .nav-list-2 {
+.box .nav .nav-l .nav-l-b li .list_t .nav-list-2 {
   margin-left: 3px;
 }
 
@@ -451,6 +467,7 @@ a:hover {
   border-top-style: initial;
   border-top-color: initial;
   display: none;
+  z-index: 50;
 }
 
 .box .nav .nav-r li .zs p {
@@ -483,32 +500,186 @@ a:hover {
   background: #0066d4;
 }
 
-.box .wrap-foot ul {
+.box .wrap-foot .wrap-f {
   padding: 30px 0px;
   border-bottom: 1px solid #147ce8;
 }
 
-.box .wrap-foot ul li {
+.box .wrap-foot .wrap-f li {
   float: left;
-  display: inline;
   padding-right: 58px;
 }
 
-.box .wrap-foot ul li img {
+.box .wrap-foot .wrap-f li img {
   float: left;
-  display: inline;
   margin-right: 8px;
 }
 
-.box .wrap-foot ul li .wrap-b {
+.box .wrap-foot .wrap-f li .wrap-t {
   float: left;
-  display: inline;
   color: #ffffff;
 }
 
-.box .wrap-foot ul li .wrap-b p {
+.box .wrap-foot .wrap-f li .wrap-t p {
   font-size: 20px;
   font-weight: 400;
   font-family: "Microsoft YaHei";
   margin-bottom: 5px;
+}
+
+.box .wrap-foot .wrap-b {
+  padding: 36px 0 40px 20px;
+  width: 1180px;
+  height: 162px;
+}
+
+.box .wrap-foot .wrap-b .wrap-b-l {
+  float: left;
+  width: 248px;
+  color: #fff;
+  border-right: 1px solid #0c74df;
+  padding-right: 50px;
+}
+
+.box .wrap-foot .wrap-b .wrap-b-l .wrap-img1 {
+  width: 106px;
+}
+
+.box .wrap-foot .wrap-b .wrap-b-l .wrap-img1 img {
+  width: 106px;
+  height: 106px;
+}
+
+.box .wrap-foot .wrap-b .wrap-b-l .wrap-img1 .title1 {
+  padding-bottom: 8px;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+}
+
+.box .wrap-foot .wrap-b .wrap-b-l .wrap-img1 .active1 {
+  padding-top: 8px;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+}
+
+.box .wrap-foot .wrap-b .wrap-b-r {
+  float: left;
+}
+
+.box .wrap-foot .wrap-b .wrap-b-r .left-wrap {
+  padding-left: 50px;
+}
+
+.box .wrap-foot .wrap-b .wrap-b-r .left-wrap dl {
+  float: left;
+  width: 114px;
+  text-align: left;
+  color: #fff;
+  line-height: 22px;
+}
+
+.box .wrap-foot .wrap-b .wrap-b-r .left-wrap dl dt {
+  padding-bottom: 12px;
+  font: bold 16px/24px "";
+}
+
+.box .wrap-foot .wrap-b .wrap-b-r .left-wrap dl dd a {
+  color: #fff;
+}
+
+.box .wrap-foot .wrap-b .wrap-b-r .right-wrap {
+  padding-top: 4px;
+  padding-left: 60px;
+  width: 192px;
+  border-left: 1px solid #0b72de;
+}
+
+.box .foot {
+  padding-top: 10px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 22px;
+}
+
+.box .foot .title {
+  font-weight: bold;
+  color: #666;
+}
+
+.box .foot a {
+  padding-right: 12px;
+  color: #666;
+}
+
+.box .foot .friendLinks {
+  height: 22px;
+  overflow: hidden;
+}
+
+.box .foot .friendLinks .foot-list {
+  width: 1092px;
+  text-align: left;
+}
+
+.box .foot .aboutKadList {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid #cdcdcd;
+  text-align: center;
+  position: relative;
+}
+
+.box .foot .aboutKadList a {
+  padding-right: 3px;
+}
+
+.box .foot .aboutKadList a span {
+  background: url(../img/ia_10151.png) no-repeat;
+  width: 23px;
+  height: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 304px;
+}
+
+.box .foot .diploma_list {
+  padding: 0 0 20px 16px;
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+.box .foot .diploma_list a {
+  text-align: center;
+  padding-right: 8px;
+}
+
+.box .foot ul {
+  text-align: center;
+}
+
+.box .foot ul li {
+  padding-left: 8px;
+  display: inline-block;
+}
+
+.box .foot ul li a {
+  padding-right: 0;
+  float: left;
+  color: #333;
+  line-height: 18px;
+}
+
+.box .foot ul li .tex {
+  padding-right: 4px;
+  width: 82px;
+  border-right: 2px solid #e0e0e0;
+}
+
+.box .foot .foot-end {
+  padding: 5px 0;
+  text-align: center;
+  color: #666;
 }
