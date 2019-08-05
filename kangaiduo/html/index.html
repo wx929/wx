@@ -8,11 +8,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <!-- <script src="../js/indexnav.js"></script> -->
+
 
 </head>
 
 <body>
     <div class="box">
+        <!-- 头部 -->
         <div class="header">
             <div style="margin: 0 auto">
                 <div class="content">
@@ -98,7 +102,9 @@
             </div>
             <div class="seach">
                 <div class="content clearfix">
-                    <div class="seach-l"><a href=""><img src="../img/ia_10002.jpg" alt=""></a></div>
+                    <div class="seach-l">
+                        <a href=""><img src="../img/ia_10002.jpg" alt=""></a>
+                    </div>
                     <div class="seach-r">
                         <form action="">
                             <input type="search" id="seach-box" placeholder="腹泻">
@@ -118,12 +124,13 @@
             </div>
 
         </div>
+        <!-- 导航 -->
         <div class="nav">
             <div class="content clearfix">
                 <div class="nav-l">
                     <h2><a href="">全部分类</a></h2>
                     <ul class="nav-l-b">
-                        <li>
+                        <!-- <li>
                             <div class="list_t">
                                 <a href="" class="nav-list-1">专科用药</a>|
                                 <a href="" class="nav-list-2">肾宝片</a>
@@ -170,7 +177,7 @@
                                 </dl>
 
                             </div>
-                        </li>
+                        </li> -->
 
 
 
@@ -214,9 +221,26 @@
                 </ul>
             </div>
         </div>
-
+        <!-- 轮播 -->
         <div class="lunbo">
-            <div></div>
+            <div class="zz">
+                <div class="slider">
+                    <ul>
+                        <li>
+                            <a href=""><img src="../img/ia_10007.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ia_10008.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ia_10009.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ia_10010.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="cebian">
                 <ul class="clearfix">
                     <li>
@@ -256,6 +280,7 @@
                 <a href=""><img src="../img/ia_10013.jpg" alt=""></a>
             </div>
         </div>
+        <!-- 商品  -->
         <div class="goodbody">
             <div class="content">
                 <div class="hotPro">
@@ -264,37 +289,290 @@
                         </h3>
                         <div class="hotProM">
                             <p>
-                                <i></i>
-                                剩余
-                                <span style=""></span>
-                                时
-                                <span></span>
-                                分
-                                <span></span>
-                                秒
+                                <i></i> 剩余
+                                <span></span> 时
+                                <span></span> 分
+                                <span></span> 秒
                             </p>
                         </div>
                         <div class="hotProR">
-                            <b>1</b>
-                            <b>/</b>
-                            <b>2</b>
+                            <div class="hotPage">
+                                <b class="reduction">1</b>
+                                <b>/</b>
+                                <b class="plus">2</b>
+                            </div>
+                            <div class="direction">
+                                <img src="../img/ia_10015.png" alt="">
+                                <img src="../img/ia_10014.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="hotProC">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="zhe">
+                                    <span>8.0</span>折
+                                </div>
+                                <div class="tu">
+                                    <a href=""><img src="../img/ia_10016.jpg" alt=""></a>
+                                </div>
+                                <div class="clum">
+                                    <a href="" class="clum-t">水仙 风油精 3ml</a>
+                                    <p>
+                                        <span class="oneprice">￥2.8</span>
+                                        <span class="twoprice">￥3.5</span>
+                                    </p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="changeP ">
+                    <div class="changeP-t clearfix">
+                        <h3>健康推荐</h3>
+                        <a href="" class="changeBtn">
+                        换一批
+                        <img src="../img/ia_10026.jpg" alt="">
+                    </a>
+                    </div>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="" class="imgpro">
+                                <img src="../img/ia_10027.jpg" alt="">
+                            </a>
+                            <div class="hotPadding">
+                                <p class="nameC">
+                                    <a href="">必利劲 盐酸达泊西汀片 30mg*3片</a>
+                                </p>
+                                <p class="nameD">￥280.00</p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="ad1">
+                    <a href=""><img src="../img/111.jpg" alt=""></a>
+                </div>
+                <div class="floor">
+                    <div class="louHeader">
+                        <p>1F 家庭常备</p>
+                        <div class="louR">
+                            <dl>
+                                <dt>热门关键字：</dt>
+                                <dd class="notPro">
+                                    <img src="../img/hotIcon.png" alt="">
+                                    <a href="">皮肤瘙痒</a>
+                                </dd>
+                                <dd>
+                                    <a href="">皮炎湿疹</a>
+                                </dd>
+                                <dd style="padding-left: 20px;">
+                                    <a href="">跌打损伤</a>
+                                </dd>
+                            </dl>
                         </div>
                     </div>
-                    <div id="hotProC"></div>
+                    <div class="contextLou">
+                        <div class="contextL">
+                            <div class="louLink">
+                                <ul class="clearfix">
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                    <li>
+                                        <a href="">风寒感冒</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="louLogo">
+                                <ul>
+                                    <li class="pro_link1_logo1">
+                                        <a href=""><img src="../img/ia_10052.jpg" alt=""></a>
+                                    </li>
+                                    <li class="pro_link1_logo1">
+                                        <a href=""><img src="../img/ia_10052.jpg" alt=""></a>
+                                    </li>
+                                    <li class="pro_link1_logo1" style="border-bottom: none;">
+                                        <a href=""><img src="../img/ia_10052.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contextM"></div>
+                        <div class="contextR">
+                            <ul>
+                                <li class="floor_m">
+                                    <a href="" style="display: block">
+                                        <img src="../img/ia_10071.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <p class="pic">
+                                        <a href=""><img src="../img/ia_10047.jpg" alt="">
+                                        </a>
+
+                                    </p>
+                                    <p class="proName">
+                                        <a href="">
+                                                    理气和中 高性价比</a>
+                                    </p>
+                                    <p class="proNumber">太极 藿香正气口服液 10ml*10支/盒</p>
+                                    <p class="proPrice">￥23.80</p>
+                                </li>
+                                <li>
+                                    <p class="pic">
+                                        <a href=""><img src="../img/ia_10047.jpg" alt="">
+                                        </a>
+
+                                    </p>
+                                    <p class="proName">
+                                        <a href="">
+                                                        理气和中 高性价比</a>
+                                    </p>
+                                    <p class="proNumber">太极 藿香正气口服液 10ml*10支/盒</p>
+                                    <p class="proPrice">￥23.80</p>
+                                </li>
+                                <li>
+                                    <p class="pic">
+                                        <a href=""><img src="../img/ia_10047.jpg" alt="">
+                                        </a>
+
+                                    </p>
+                                    <p class="proName">
+                                        <a href="">
+                                                            理气和中 高性价比</a>
+                                    </p>
+                                    <p class="proNumber">太极 藿香正气口服液 10ml*10支/盒</p>
+                                    <p class="proPrice">￥23.80</p>
+                                </li>
+                                <li>
+                                    <p class="pic">
+                                        <a href=""><img src="../img/ia_10047.jpg" alt="">
+                                        </a>
+
+                                    </p>
+                                    <p class="proName">
+                                        <a href="">
+                                                                理气和中 高性价比</a>
+                                    </p>
+                                    <p class="proNumber">太极 藿香正气口服液 10ml*10支/盒</p>
+                                    <p class="proPrice">￥23.80</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div></div>
+                <div class="zongjie">
+                    <h3>热门品牌</h3>
+                    <ul>
+                        <li>
+                            <a href=""><img src="../img/ia_10102.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ia_10102.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ia_10102.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ia_10102.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ia_10102.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ia_10102.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ia_10102.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ia_10102.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ia_10102.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ia_10102.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ia_10102.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="../img/ia_10102.jpg" alt=""></a>
+                        </li>
+
+
+                    </ul>
+                    <div class="footer-link">
+                        <div class="link-title">中慈助医</div>
+                        <div class="link-list">
+                            <a href="">中慈助医患者援助申请平台</a>
+                            <a href="">中慈助医发药点管理系统</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
 
-
-
-
-
-
-
-
-
-
+        <!-- 尾部 -->
         <div class="footer">
             <div class="wrap-foot">
                 <div class="content">
@@ -504,8 +782,7 @@
             </div>
         </div>
     </div>
-    <script src="../js/jquery-3.4.1.js"></script>
-    <!-- <script src="../js/index.js"></script> -->
+
 </body>
 
 </html>
