@@ -508,6 +508,7 @@ a:hover {
   border-top-color: initial;
   display: none;
   z-index: 50;
+  background: #fff;
 }
 
 .box .nav .nav-r li .zs p {
@@ -536,35 +537,79 @@ a:hover {
   width: 100%;
   position: relative;
   margin-bottom: 20px;
+  position: relative;
 }
 
-.box .lunbo .slider {
+.box .lunbo .swiper-container {
   height: 400px;
   width: 810px;
-  margin: auto;
+  position: absolute;
+  left: -132px;
+  overflow: hidden;
+  position: relative;
 }
 
-.box .lunbo .slider ul {
+.box .lunbo .swiper-container ul {
   width: 10000px;
+  height: 400px;
+  padding: 0;
+  margin: 0;
   position: absolute;
 }
 
-.box .lunbo .slider ul li {
+.box .lunbo .swiper-container ul li {
   float: left;
+  height: 400px;
+  width: 810px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 350px;
 }
 
-.box .lunbo .slider ul li a {
+.box .lunbo .swiper-container ul li a {
   display: block;
 }
 
-.box .lunbo .slider ul li a img {
+.box .lunbo .swiper-container ul li a img {
   height: 400px;
   width: 810px;
+}
+
+.box .lunbo .prev {
+  margin-left: 20px;
+}
+
+.box .lunbo .next {
+  float: right;
+  margin-right: 20px;
+}
+
+.box .lunbo .slider-nav {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  height: 30px;
+}
+
+.box .lunbo .slider-nav-item {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  float: left;
+  border-radius: 15px;
+  margin: 0 5px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.box .lunbo .active {
+  background: red;
 }
 
 .box .lunbo .cebian {
   position: absolute;
-  left: 50%;
+  left: 49%;
   top: 0;
   margin-left: 390px;
   width: 210px;
@@ -715,6 +760,7 @@ a:hover {
 .box .goodbody #hotProC ul {
   width: 2396px;
   left: 0px;
+  position: absolute;
 }
 
 .box .goodbody #hotProC ul li {
@@ -766,6 +812,11 @@ a:hover {
   font-size: 14px;
   padding-top: 8px;
   display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  color: #333333;
 }
 
 .box .goodbody #hotProC ul li .clum p {

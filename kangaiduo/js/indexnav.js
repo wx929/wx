@@ -26,7 +26,7 @@ $(function() {
                                                         ${element.list.map((ele,index)=>{
                                                             return` |<a href="">${ele}</a>`
                                                         }).join('')}
-                                                    </dd>
+                                          </dd>
                              </dl>`
                         return html1
 

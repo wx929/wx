@@ -438,6 +438,7 @@ a:hover {
                     border-top-color: initial;
                     display: none;
                     z-index: 50;
+                    background: #fff;
                     p {
                         font-size: 16px;
                         line-height: 170%;
@@ -463,16 +464,28 @@ a:hover {
         width: 100%;
         position: relative;
         margin-bottom: 20px;
+        position: relative;
         // overflow: hidden;
-        .slider {
+        .swiper-container {
             height: 400px;
             width: 810px;
-            margin: auto;
+            position: absolute;
+            left: -132px;
+            overflow: hidden;
+            position: relative;
             ul {
                 width: 10000px;
+                height: 400px;
+                padding: 0;
+                margin: 0;
                 position: absolute;
                 li {
                     float: left;
+                    height: 400px;
+                    width: 810px;
+                    font-size: 40px;
+                    text-align: center;
+                    line-height: 350px;
                     a {
                         display: block;
                         img {
@@ -483,9 +496,36 @@ a:hover {
                 }
             }
         }
+        .prev {
+            margin-left: 20px;
+        }
+        .next {
+            float: right;
+            margin-right: 20px;
+        }
+        .slider-nav {
+            position: absolute;
+            right: 30px;
+            bottom: 10px;
+            height: 30px;
+        }
+        .slider-nav-item {
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            float: left;
+            border-radius: 15px;
+            margin: 0 5px;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .active {
+            background: red;
+        }
         .cebian {
             position: absolute;
-            left: 50%;
+            left: 49%;
             top: 0;
             margin-left: 390px;
             width: 210px;
@@ -614,6 +654,7 @@ a:hover {
             ul {
                 width: 2396px;
                 left: 0px;
+                position: absolute;
                 li {
                     float: left;
                     position: relative;
@@ -654,6 +695,11 @@ a:hover {
                             font-size: 14px;
                             padding-top: 8px;
                             display: block;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            -o-text-overflow: ellipsis;
+                            text-overflow: ellipsis;
+                            color: #333333;
                         }
                         p {
                             padding-top: 5px;
