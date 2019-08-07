@@ -54,7 +54,7 @@ $(function() {
     $.getJSON("../js/data3.json", json => (new daohang(json)).init());
     // console.log(data)
 
-    console.log($(".nav-l-b li"))
+    // console.log($(".nav-l-b li"))
     $(".nav-l-b").on('mouseenter', 'li', function(){
         let index = $(this).index();
         $(".list_pop").eq(index).addClass("active").siblings().removeClass("active");

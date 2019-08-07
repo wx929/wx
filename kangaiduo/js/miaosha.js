@@ -6,6 +6,7 @@ $(function() {
         init() {
             this.creatHtml()
             this.click1()
+
         }
         creatHtml() {
             let html2 = this.data.map(element => {
@@ -30,6 +31,7 @@ $(function() {
                 // console.log(html2)
             $("#hotProC").append(html1);
         }
+
         click1() {
 
             $("#qiehuan2").click(function() {
@@ -57,7 +59,7 @@ $(function() {
                 }
                 var left = $(".qie").css("left");
                 var left = $(".qie").css("left");
-                console.log(left)
+
                 if (left == "0px") {
                     $(".qie").animate({ "left": "-1200px" });
                 } else {
@@ -99,7 +101,34 @@ $(function() {
     document.querySelector('.swiper-container').onmouseleave = function() {
         mySwiper.autoplay.start();
     }
+    var oCountDown = document.getElementsByClassName("hotProM")[0];
+    var target = new Date(2019, 7, 20, 17, 00, 00);
 
-    let miao = new miaosha()
+    /* [2] 开启定时器计算并显示倒计时 */
+    var timer = setInterval(function() {
+        var currentDate = new Date();
+        var offset = Math.round((target.getTime() - currentDate.getTime()) / 1000);
+
+        if (offset <= 0) {
+
+            /* 关闭倒计时 */
+            clearInterval(timer);
+        }
+
+        var h = Math.floor(offset / 60 / 60 % 24);
+
+        var m = Math.floor(offset / 60 % 60);
+        var s = Math.floor(offset % 60);
+        var res = `
+        <i></i> 剩余
+        <span>${h}</span> 时
+        <span>${m}</span> 分
+        <span>${s}</span> 秒
+        `;
+        // oCountDown.innerText = res;
+        $('.timeD').html(res)
+    }, 1000);
+
+    // let miao = new miaosha()
     $.getJSON("../js/chaozhimiaos.json", json => (new miaosha(json)).init());
 })
