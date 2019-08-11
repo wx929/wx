@@ -67,7 +67,7 @@ $(function() {
 
 
 
-    $.getJSON("../js/jiankang.json", function(sa) {
+    $.getJSON("../json/jiankang.json", function(sa) {
         new jian(sa).init()
     });
 

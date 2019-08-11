@@ -2,6 +2,7 @@ $(function() {
             class daohang {
                 constructor(data) {
                     this.data = data;
+                    this.data = [];
                     // console.log(this.data)
                 }
                 init() {
@@ -10,7 +11,7 @@ $(function() {
                 }
                 rannav() {
                         this.data.forEach((e, index) => {
-                                    // console.log(index)
+                                    console.log('123:', index)
                                     var html = '';
                                     var html1 = '';
                                     // console.log(e);
@@ -51,7 +52,7 @@ $(function() {
     
     let kang = new daohang();
 
-    $.getJSON("../js/data3.json", json => (new daohang(json)).init());
+    $.getJSON("../json/data3.json", json => (new daohang(json)).init());
     // console.log(data)
 
     // console.log($(".nav-l-b li"))

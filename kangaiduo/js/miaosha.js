@@ -130,5 +130,5 @@ $(function() {
     }, 1000);
 
     // let miao = new miaosha()
-    $.getJSON("../js/chaozhimiaos.json", json => (new miaosha(json)).init());
+    $.getJSON("../json/chaozhimiaos.json", json => (new miaosha(json)).init());
 })
